@@ -1,11 +1,26 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class App extends Component {
-render() {
-	<React.Fragment>
-	return  <input type="text" onChange={()=> {console.log("I am clicked!")}} />;
-	</React.Fragment>
+//class app extends component {
+//render() {
+//	<react.fragment>
+//	return  <input type="text" onchange={()=> {console.log("i am clicked!")}} />;
+//	</react.fragment>
+//}
+//
+//}
+
+
+const App = () => {
+   return (
+	<div>
+	  <Cat />
+	  <Cat />
+	</div>
+)
 }
+
+const Cat = () => {
+	return <div>Meow!</div>
 }
 
 export default App;
